@@ -2,6 +2,10 @@
 Transmembrane topology prediction from amino acid only
 
 
+# Server
+Users may submit their sequences in : http://pureseqtm.predmp.com
+
+
 # Install
 ## Download the PureseqTM package
 ```
