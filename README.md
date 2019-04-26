@@ -89,7 +89,7 @@ There shall be 5 to 7 output files in XXX_PureTM by default, where XXX is the in
 
 # References
 
-###[Phobius](http://phobius.sbc.su.se/)
+### [Phobius](http://phobius.sbc.su.se/)
 ```
 Title:
      A Combined Transmembrane Topology and Signal Peptide Prediction Method
@@ -99,7 +99,7 @@ Journal:
      J. Mol. Biol. (2004) 338, 1027–1036
 ```
 
-###[Philius](http://www.yeastrc.org/philius/pages/philius/runPhilius.jsp)
+### [Philius](http://www.yeastrc.org/philius/pages/philius/runPhilius.jsp)
 ```
 Title:
      Transmembrane Topology and Signal Peptide Prediction Using Dynamic Bayesian Networks
@@ -109,7 +109,7 @@ Journal:
      PLoS computational biology (2008) 4(11):e1000213
 ```
 
-###[DeeppCNF](https://github.com/realbigws/DeepCNF_AUC)
+### [DeeppCNF](https://github.com/realbigws/DeepCNF_AUC)
 ```
 Title:
      Protein secondary structure prediction using deep convolutional neural fields
