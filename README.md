@@ -1,9 +1,11 @@
 # PureseqTM
 Transmembrane topology prediction from amino acid only
 
+## Server
+Users may submit their sequences to the PureseqTM Server at: http://pureseqtm.predmp.com
 
-# Server
-Users may submit their sequences in : http://pureseqtm.predmp.com
+## Train and test data
+Users may find the train, test data of PureseqTM at: https://github.com/PureseqTM/PureseqTM_Database 
 
 
 # Install
@@ -87,7 +89,7 @@ There shall be 5 to 7 output files in XXX_PureTM by default, where XXX is the in
 
 # Reference
 
-Phobius
+[Phobius](http://phobius.sbc.su.se/)
 ```
 Title:
      A Combined Transmembrane Topology and Signal Peptide Prediction Method
@@ -97,7 +99,7 @@ Journal:
      J. Mol. Biol. (2004) 338, 1027–1036
 ```
 
-Philius
+[Philius](http://www.yeastrc.org/philius/pages/philius/runPhilius.jsp)
 ```
 Title:
      Transmembrane Topology and Signal Peptide Prediction Using Dynamic Bayesian Networks
@@ -107,7 +109,7 @@ Journal:
      PLoS computational biology (2008) 4(11):e1000213
 ```
 
-DeeppCNF
+[DeeppCNF](https://github.com/realbigws/DeepCNF_AUC)
 ```
 Title:
      Protein secondary structure prediction using deep convolutional neural fields
