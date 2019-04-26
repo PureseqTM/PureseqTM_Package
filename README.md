@@ -87,7 +87,7 @@ There shall be 5 to 7 output files in XXX_PureTM by default, where XXX is the in
 | XXX.gff       | segment-level output | if option -P 1 is set |
 
 
-# Reference
+# References
 
 [Phobius](http://phobius.sbc.su.se/)
 ```
