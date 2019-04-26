@@ -1,0 +1,42 @@
+#------- 1) Phobius --------#
+# 'decodeanhmm' is the key binary executable from Phobius:
+http://phobius.sbc.su.se/data.html
+
+#[Reference]:
+# Title:
+#     A Combined Transmembrane Topology and Signal Peptide Prediction Method
+# Authors:
+#     Lukas Kall, Anders Krogh and Erik L. L. Sonnhammer
+# Journal:
+#     J. Mol. Biol. (2004) 338, 1027–1036
+#---------------------------#
+
+
+#------- 2) Philius --------#
+# 'gmtkJT' is the key binary executable from Philius:
+https://noble.gs.washington.edu/proj/philius/bin/
+
+#[Reference]:
+# Title:
+#     Transmembrane Topology and Signal Peptide Prediction Using Dynamic Bayesian Networks
+# Authors:
+#     Sheila M. Reynolds, Lukas Kall, Michael E. Riffle, Jeff A. Bilmes, William Stafford Noble
+# Journal:
+#     PLoS computational biology (2008) 4(11):e1000213
+#---------------------------#
+
+
+#------- 3) DeepCNF --------#
+# 'DeepCNF_Pred' and 'DeepCNF_FeatMake' are the key programs from DeepCNF:
+https://github.com/realbigws/DeepCNF_AUC
+
+#[Reference]:
+# Title:
+#     Protein secondary structure prediction using deep convolutional neural fields
+# Authors:
+#     Sheng Wang, Jian Peng, Jianzhu Ma, Jinbo Xu
+# Journal:
+#     Scientific reports (2016) 6:18962
+#---------------------------#
+
+
