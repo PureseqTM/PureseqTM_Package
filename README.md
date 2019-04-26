@@ -25,17 +25,17 @@ cd ../
 # Examples
 
 ## single protein prediction
-prediction without ground-truth label
+#### prediction without ground-truth label
 ```
 ./PureseqTM.sh -i example/4j7cK.fasta
 ```
 
-given ground-truth 2-state TM label
+#### given ground-truth 2-state TM label
 ```
 ./PureseqTM.sh -i example/4j7cK.fasta -l example/4j7cK.top
 ```
 
-plot the posterior probabilities using GNUPLOT
+#### plot the posterior probabilities using GNUPLOT
 ```
 ./PureseqTM.sh -i example/4j7cK.fasta -P 1
 ```
