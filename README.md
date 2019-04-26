@@ -18,7 +18,7 @@ cd ./PureseqTM_Package
 ## Compilation if necessary
 ```
 cd source_code
-make
+    make
 cd ../
 ```
 
