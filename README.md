@@ -35,13 +35,6 @@ cd ../
 ./PureseqTM.sh -i example/4j7cK.fasta -l example/4j7cK.top
 ```
 
-#### plot the posterior probabilities using GNUPLOT
-```
-./PureseqTM.sh -i example/4j7cK.fasta -P 1
-```
-Note that gnuplot is required.
-
-
 ## evaluate the prediction result
 If the ground-truth label is provided, run below commands to evaluate the prediction accuracy:
 ```
@@ -49,6 +42,12 @@ grep -v "#" 4j7cK_PureTM/4j7cK.prob | awk '{print $NF" "$3}' > 4j7cK.pred_reso
 util/TM2_Evaluation 4j7cK.pred_reso 0.5
 rm -f 4j7cK.pred_reso
 ```
+
+## plot the posterior probabilities
+```
+./PureseqTM.sh -i example/4j7cK.fasta -P 1
+```
+Note that gnuplot is required to be installed in the local system.
 
 ## prediction with given profile
 ```
