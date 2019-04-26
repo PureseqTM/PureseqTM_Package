@@ -1,5 +1,5 @@
 # PureseqTM
-Transmembrane topology prediction from amino acid only
+TransMembrane (TM) topology prediction from amino acid sequence only
 
 ### Server
 Users may submit their sequences to the PureseqTM Server at: http://pureseqtm.predmp.com
