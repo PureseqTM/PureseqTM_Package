@@ -83,7 +83,7 @@ There shall be 5 to 7 output files in XXX_PureTM by default, where XXX is the in
 | XXX.top       | simple 2-state TransMembrane (TM) prediction in FASTA format. | |
 | XXX.prob      | detailed 2-state TransMembrane (TM) probability prediction. | |
 | XXX.pred_mode | prediction mode (0 for sequence and 1 for profile). | |
-| XXX.png       | posterior probabilities ploted by GNUPLOT | if option -P 1 is set |
+| XXX.png       | posterior probabilities plotted by GNUPLOT | if option -P 1 is set |
 | XXX.gff       | segment-level output | if option -P 1 is set |
 
 
