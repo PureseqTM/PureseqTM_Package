@@ -9,13 +9,13 @@ Users may find the train, test data of PureseqTM at: https://github.com/PureseqT
 
 
 # Install
-## Download the PureseqTM package
+### Download the PureseqTM package
 ```
 git clone https://github.com/PureseqTM/PureseqTM_Package.git
 cd ./PureseqTM_Package
 ```
 
-## Compilation if necessary
+### Compilation if necessary
 ```
 cd source_code
     make
