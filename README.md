@@ -108,7 +108,7 @@ Journal:
      PLoS computational biology (2008) 4(11):e1000213
 ```
 
-### [DeeppCNF](https://github.com/realbigws/DeepCNF_AUC)
+### [DeepCNF](https://github.com/realbigws/DeepCNF_AUC)
 ```
 Title:
      Protein secondary structure prediction using deep convolutional neural fields
