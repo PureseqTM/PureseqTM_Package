@@ -5,7 +5,7 @@ TransMembrane (TM) topology prediction from amino acid sequence only
 Users may submit their sequences to the PureseqTM Server at: http://pureseqtm.predmp.com
 
 ### Train and test data
-Users may find the train, test data of PureseqTM at: https://github.com/PureseqTM/PureseqTM_Database 
+Users may find the train, test data of PureseqTM at: https://github.com/PureseqTM/PureseqTM_Dataset 
 
 
 # Install
