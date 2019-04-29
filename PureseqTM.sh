@@ -21,7 +21,7 @@ usage()
 	echo ""
 	echo "-p signal_pep   : Output signal peptide label or not. [default = 0 NOT to output] "
 	echo ""
-	echo "-P plot         : Plot posterior probabilities ot not. [default = 0 NOT to plot] "
+	echo "-P plot         : Plot posterior probabilities or not. [default = 0 NOT to plot] "
 	echo ""
 	echo "-K remove_tmp   : Remove temporary folder or not. [default = 1 to remove] "
 	echo ""
