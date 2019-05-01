@@ -4,7 +4,7 @@
 # ----- usage ------ #
 usage()
 {
-	echo "PureseqTM v0.18 [Apr-30-2019] "
+	echo "PureseqTM v0.19 [Apr-30-2019] "
 	echo "    Predict TransMembrane (TM) topology from a given sequence in FASTA format. "
 	echo ""
 	echo "USAGE:  ./PureseqTM.sh <-i input_fasta | input_tgt> [-o out_root] [-p signal_pep] [-P plot] [-K remove_tmp] [-H home] "
@@ -281,12 +281,19 @@ $bin/DeepCNF_FeatMake $tmp_root/$relnam.feat_prev $truth_label_file \
 #-> has profile or not
 if [ $amino_only -eq 0 ]
 then
+	#-> profile
 	$util/profile_dump $tmp_root/$relnam.tgt \
 	    > $tmp_root/$relnam.profile
+	#-> one-hot
 	$util/pureseq_dump $tmp_root/$relnam.seq 0 \
 	    > $tmp_root/$relnam.onehot
-	paste $tmp_root/$relnam.profile $tmp_root/$relnam.onehot \
+	#-> AAindex
+	awk '{print $1" "$2" "$3" "$4" "$5}' $tmp_root/$relnam.pureseq \
+	    > $tmp_root/$relnam.aaindex
+	#---- paste all features ----#
+	paste $tmp_root/$relnam.profile $tmp_root/$relnam.onehot $tmp_root/$relnam.aaindex \
 	    > $tmp_root/$relnam.feat_prof
+	#---- feature make ----------#
 	$bin/DeepCNF_FeatMake $tmp_root/$relnam.feat_prof $truth_label_file \
             > $tmp_root/$relnam.prof_feat
 fi
@@ -298,7 +305,7 @@ fi
 
 labeldim="2"
 featdim="36"
-profdim="60"
+profdim="65"
 wind="5,5,5,5,5"
 node="100,100,100,100,100"
 detect_model=$param/detect.model
