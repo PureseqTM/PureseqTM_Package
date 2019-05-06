@@ -255,13 +255,10 @@ tmseg=`awk '{if($3=="M"){print $0}}' $tmp_root/$relnam.pbseg | wc | awk '{print 
 ntsp=`awk '{if($3=="h"){print $0}}' $tmp_root/$relnam.pbseg | wc | awk '{print $1}'`
 
 #-> run Phobius to generate HMM features
-if [ $mode -eq 1 ]
-then
-	$runcom $tmp_root/$relnam.seq -plp 1> $tmp_root/$relnam.plp 2> $tmp_root/$relnam.err
-	grep -v "#" $tmp_root/$relnam.plp | \
-	    awk '{a=$2;b=$3+$4;c=$5;d=$6+$7+$8+$9;print a" "b" "c" "d}' \
-	    > $tmp_root/$relnam.phobius
-fi
+$runcom $tmp_root/$relnam.seq -plp 1> $tmp_root/$relnam.plp 2> $tmp_root/$relnam.err
+grep -v "#" $tmp_root/$relnam.plp | \
+    awk '{a=$2;b=$3+$4;c=$5;d=$6+$7+$8+$9;print a" "b" "c" "d}' \
+    > $tmp_root/$relnam.phobius
 
 
 #----------- Part 1.2 generate Philius features ---------------#
@@ -298,7 +295,8 @@ then
 	paste $tmp_root/$relnam.phobius $tmp_root/$relnam.philius \
 	    $tmp_root/$relnam.pureseq > $tmp_root/$relnam.feat_prev
 else
-	cp $tmp_root/$relnam.pureseq $tmp_root/$relnam.feat_prev
+	paste $tmp_root/$relnam.pureseq $tmp_root/$relnam.phobius \
+	    > $tmp_root/$relnam.feat_prev
 fi
 $bin/DeepCNF_FeatMake $tmp_root/$relnam.feat_prev $truth_label_file \
             > $tmp_root/$relnam.feat
@@ -329,7 +327,7 @@ fi
 #--------------------------------------------------------------#
 
 labeldim="2"
-featdim_fast="25"
+featdim_fast="29"
 featdim_slow="36"
 profdim="65"
 wind="5,5,5,5,5"
