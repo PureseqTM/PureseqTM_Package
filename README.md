@@ -32,7 +32,7 @@ cd ../
 
 ## single protein prediction
 
-#### prediction with fast mode (i.e., NOT use HMM and DBN features from Phobius and Philius)
+#### prediction with fast mode (i.e., NOT use DBN features from Philius)
 ```
 ./PureseqTM.sh -i example/4j7cK.fasta -m 0
 ```
