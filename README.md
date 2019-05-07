@@ -7,6 +7,9 @@ Users may submit their sequences to the PureseqTM Server at: http://pureseqtm.pr
 ### Train and test data
 Users may find the train, test data of PureseqTM at: https://github.com/PureseqTM/PureseqTM_Dataset 
 
+### Paper
+https://www.biorxiv.org/content/10.1101/627307v2.abstract
+
 ### Contact email
 pureseqtm@gmail.com
 
