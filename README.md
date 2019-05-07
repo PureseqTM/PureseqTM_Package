@@ -1,6 +1,11 @@
 # PureseqTM
 TransMembrane (TM) topology prediction from amino acid sequence only
 
+<p align="center">
+<img src="https://github.com/PureseqTM/PureseqTM_Package/blob/master/example/pipeline_v0.19.png" width="600"/>
+</p>
+
+
 ### Server
 Users may submit their sequences to the PureseqTM Server at: http://pureseqtm.predmp.com
 
