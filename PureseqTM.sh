@@ -230,7 +230,7 @@ fi
 # --- copy initial file to tmp ----#
 if [ $amino_only -eq 1 ]
 then
-	cp $input_fasta $tmp_root/$relnam.seq
+	$util/Verify_FASTA $input_fasta $tmp_root/$relnam.seq
 else
 	cp $input_tgt $tmp_root/$relnam.tgt
 	echo ">$relnam" > $tmp_root/$relnam.seq
@@ -377,7 +377,7 @@ rm -f $tmp_root/$relnam.err3
 
 
 #---- make output readable -----#
-$util/Verify_FASTA $tmp_root/$relnam.seq $out_root/$relnam.fasta
+cp $tmp_root/$relnam.seq $out_root/$relnam.fasta
 $util/TM2_Trans $out_root/$relnam.fasta $tmp_root/$relnam.out $low_thres $truth_output \
             $low_len $tmseg $seg_len > ${out_root}/$relnam.prob
 cp $out_root/$relnam.fasta ${out_root}/$relnam.top
@@ -418,7 +418,12 @@ fi
 
 
 #----------- remove tmp -------------#
-cp $tmp_root/$relnam.seq $out_root/$relnam.fasta_raw
+if [ $amino_only -eq 1 ]
+then
+	cp $input_fasta $out_root/$relnam.fasta_raw
+else
+	cp $tmp_root/$relnam.seq $out_root/$relnam.fasta_raw
+fi
 echo "$amino_only" > $out_root/$relnam.pred_mode
 if [ $kill_tmp -eq 1 ]
 then
