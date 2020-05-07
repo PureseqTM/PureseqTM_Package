@@ -1,0 +1,10 @@
+language: generic
+dist: bionic
+
+install:
+  - sudo apt update
+  - cd source_code && make && cd ../
+
+script:
+  - ./PureseqTM.sh -i example/4j7cK.fasta -m 0
+
