@@ -1,4 +1,7 @@
 # PureseqTM
+
+[![Build Status](https://travis-ci.org/richelbilderbeek/PureseqTM_Package.svg?branch=master)](https://travis-ci.org/richelbilderbeek/PureseqTM_Package)
+
 TransMembrane (TM) topology prediction from amino acid sequence only
 
 <p align="center">
